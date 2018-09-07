@@ -9,7 +9,7 @@ public class AtividadePhillipe {
    
     public static void main(String[] args) {
        int menu;
-       int [] valores = null; 
+       int [] valores; 
        System.out.println("Digite 1 para cadastrar um novo valor");
         System.out.println("Digite 2 para buscar o valor maior");
         System.out.println("Digite 3 para busca o menor valor");
@@ -20,7 +20,18 @@ public class AtividadePhillipe {
     menu = scan.nextInt();
         switch(menu){
             case 1:
-                valores = valores ++;
+                op.AdicionarNovoValor();
+              break;
+            case 2:
+                op.VerificarMaior();
+              break;
+            case 3:
+                op.VerificarMenor();
+              break;
+            case 4:
+                op.VerificarMedia();
+            case 5:
+                System.out.println("saindo");
         }
         }
           
